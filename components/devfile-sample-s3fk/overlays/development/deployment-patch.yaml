@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-s3fk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0041-tenant/tkrw-pr712-0075-0041-app/devfile-sample-s3fk@sha256:ee64f7a9851eeae80f9f90a723afc7ef7ff47cb1afaf547b9886cbd21d6a0d59
+        name: my-nodejs
+        resources: {}
+status: {}
